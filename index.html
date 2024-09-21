@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Check Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="survey-container">
+        <!-- Part 1 -->
+        <div id="part-1" class="survey-part">
+            <h2>Part 1</h2>
+            <p>ใน 2 สัปดาห์ที่ผ่านมา รวมวันนี้ ท่านรู้สึก หดหู่ เศร้า หรือท้อแท้สิ้นหวัง หรือไม่</p>
+            <label><input type="radio" name="q1" value="yes"> มี</label>
+            <label><input type="radio" name="q1" value="no"> ไม่มี</label>
+
+            <p>ใน 2 สัปดาห์ที่ผ่านมา รวมวันนี้ท่านรู้สึก เบื่อทำอะไรไม่เพลิดเพลิน หรือไม่</p>
+            <label><input type="radio" name="q2" value="yes"> มี</label>
+            <label><input type="radio" name="q2" value="no"> ไม่มี</label>
+
+            <button id="part-1-next">Next</button>
+        </div>
+
+        <!-- Part 2 -->
+        <div id="part-2" class="survey-part" style="display: none;">
+            <h2>Part 2</h2>
+
+            <p>เบื่อ ไม่สนใจอยากทำอะไร</p>
+            <label><input type="radio" name="q3" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q3" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q3" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q3" value="3"> เป็นทุกวัน</label>
+
+            <p>ไม่สบายใจ ซึมเศร้า ท้อแท้</p>
+            <label><input type="radio" name="q4" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q4" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q4" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q4" value="3"> เป็นทุกวัน</label>
+
+            <p>หลับยากหรือหลับๆตื่นๆหรือหลับมากไป</p>
+            <label><input type="radio" name="q5" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q5" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q5" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q5" value="3"> เป็นทุกวัน</label>
+
+            <p>เหนื่อยง่ายหรือไม่ค่อยมีแรง</p>
+            <label><input type="radio" name="q6" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q6" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q6" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q6" value="3"> เป็นทุกวัน</label>
+
+            <p>เบื่ออาหารหรือกินมากเกินไป</p>
+            <label><input type="radio" name="q7" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q7" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q7" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q7" value="3"> เป็นทุกวัน</label>
+
+            <p>รู้สึกไม่ดีกับตัวเอง คิดว่าตัวเองล้มเหลวหรือครอบครัวผิดหวัง</p>
+            <label><input type="radio" name="q8" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q8" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q8" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q8" value="3"> เป็นทุกวัน</label>
+
+            <p>สมาธิไม่ดี เวลาทำอะไร เช่น ดูโทรศัพท์ ฟังวิทยุ หรือทำงานที่ต้องใช้ความตั้งใจ</p>
+            <label><input type="radio" name="q9" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q9" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q9" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q9" value="3"> เป็นทุกวัน</label>
+
+            <p>พูดช้า ทำอะไรช้าลงจนคนอื่นสังเกตเห็นได้ หรือกระสับกระส่ายไม่สามารถอยู่นิ่งได้เหมือนที่เคยเป็น</p>
+            <label><input type="radio" name="q10" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q10" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q10" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q10" value="3"> เป็นทุกวัน</label>
+
+            <p>คิดทำร้ายตนเองหรือคิดว่าถ้าตายเป็นคงจะดี</p>
+            <label><input type="radio" name="q11" value="0"> ไม่มีเลย</label>
+            <label><input type="radio" name="q11" value="1"> เป็นบางวัน 1-7 วัน</label>
+            <label><input type="radio" name="q11" value="2"> เป็นบ่อย > 7 วัน</label>
+            <label><input type="radio" name="q11" value="3"> เป็นทุกวัน</label>
+
+            <button id="part-2-next">Next</button>
+        </div>
+
+        <!-- Part 3 -->
+        <div id="part-3" class="survey-part" style="display: none;">
+            <h2>Part 3</h2>
+
+            <p>คิดอยากตาย หรือ คิดว่าตายไปจะดีกว่า</p>
+            <label><input type="radio" name="q12" value="1"> มี</label>
+            <label><input type="radio" name="q12" value="0"> ไม่มี</label>
+
+            <p>อยากทำร้ายตัวเอง หรือ ทำให้ตัวเองบาดเจ็บ</p>
+            <label><input type="radio" name="q13" value="2"> มี</label>
+            <label><input type="radio" name="q13" value="0"> ไม่มี</label>
+
+            <p>คิดเกี่ยวกับการฆ่าตัวตาย</p>
+            <label><input type="radio" name="q14" value="6"> มี</label>
+            <label><input type="radio" name="q14" value="0"> ไม่มี</label>
+
+            <p>ท่านสามารถควบคุมความอยากฆ่าตัวตายที่ท่านคิดอยู่นั้นได้หรือไม่หรือบอกได้ไหมว่าคงจะไม่ทำตามความคิดนั้นในขณะนี้</p>
+            <label><input type="radio" name="q15" value="8"> มี</label>
+            <label><input type="radio" name="q15" value="0"> ไม่มี</label>
+
+            <p>มีแผนการที่จะฆ่าตัวตาย</p>
+            <label><input type="radio" name="q16" value="8"> มี</label>
+            <label><input type="radio" name="q16" value="0"> ไม่มี</label>
+
+            <p>ได้เตรียมการที่จะทำร้ายตนเองหรือเตรียมการจะฆ่าตัวตายโดยตั้งใจว่าจะทำให้ตายจริง ๆ</p>
+            <label><input type="radio" name="q17" value="9"> มี</label>
+            <label><input type="radio" name="q17" value="0"> ไม่มี</label>
+
+            <p>ได้ทำให้ตนเองบาดเจ็บแต่ไม่ตั้งใจที่จะทำให้เสียชีวิต</p>
+            <label><input type="radio" name="q18" value="4"> มี</label>
+            <label><input type="radio" name="q18" value="0"> ไม่มี</label>
+
+            <p>ได้พยายามฆ่าตัวตายโดยคาดหวัง/ตั้งใจที่จะให้ตาย</p>
+            <label><input type="radio" name="q19" value="10"> มี</label>
+            <label><input type="radio" name="q19" value="0"> ไม่มี</label>
+
+            <p>ท่านเคยพยายามฆ่าตัวตาย</p>
+            <label><input type="radio" name="q20" value="4"> มี</label>
+            <label><input type="radio" name="q20" value="0"> ไม่มี</label>
+
+            <button id="submit-survey">Submit</button>
+        </div>
+
+        <!-- Result -->
+        <div id="result" style="display: none;">
+            <h2>Survey Result</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
